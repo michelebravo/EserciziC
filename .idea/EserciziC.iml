@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/es3.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/es1.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bancomat.c" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

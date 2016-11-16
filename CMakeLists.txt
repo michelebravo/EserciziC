@@ -38,3 +38,7 @@ add_executable(BUILD_8 ${SOURCE_FILES})
 set(BUILD_9 es9)
 set(SOURCE_FILES es9.c)
 add_executable(BUILD_9 ${SOURCE_FILES})
+
+set(BUILD_BANCOMAT bancomat)
+set(SOURCE_FILES bancomat.c)
+add_executable(BUILD_BANCOMAT ${SOURCE_FILES})
