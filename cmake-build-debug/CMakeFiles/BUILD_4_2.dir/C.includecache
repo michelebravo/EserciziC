@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Michele/Desktop/Documents/Scuola/Seconda/C/EserciziC/Esercizio2/es4.c
+stdio.h
+-
+stdlib.h
+-
+

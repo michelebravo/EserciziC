@@ -7,6 +7,12 @@ void prelievi();
 void versamenti();
 void estratto(int in[], int out[]);
 
+
+typedef struct node {
+    int val;
+    struct node * next;
+} azione;
+
 void insert(int in[], int out[]) {
     int x;
     printf("Cosa vuoi fare? :");
@@ -53,10 +59,12 @@ int main() {
 }
 
 void prelievi() {
-    printf("Il tuo saldo è %d\n", balance);
+    printf("Il tuo saldo e' di %d euro.\n", balance);
     int request;
     if (balance <= 0) {
         printf("Impossibile prelevare\n");
+        system("pause");
+        system("cls");
         main();
         return;
     }
@@ -64,15 +72,17 @@ void prelievi() {
     printf("Quanto vuoi prelevare? :");
     scanf("%d", &request);
     if (request > balance){
-        system("cls");
         printf("richiesta troppo elevata\n");
-        main();
+        system("pause");
+        system("cls");
+        prelievi();
         return;
     }
 
     balance = balance - request;
-    system("cls");
     printf("prelievo effettuato\n");
+    system("pause");
+    system("cls");
     main();
     return;
 
@@ -86,8 +96,9 @@ void versamenti() {
     printf("Quanto vuoi versare? :");
     scanf("%d", &request);
     balance = balance + request;
-    system("cls");
     printf("versamento effettuato\n");
+    system("pause");
+    system("cls");
     main();
     return;
 }

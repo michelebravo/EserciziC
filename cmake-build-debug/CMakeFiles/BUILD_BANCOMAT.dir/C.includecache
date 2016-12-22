@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Michele/Desktop/Documents/Scuola/Seconda/C/EserciziC/Bancomat/bancomat.c
+stdio.h
+-
+stdlib.h
+-
+
